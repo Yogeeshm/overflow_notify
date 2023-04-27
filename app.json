@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "overflow_notify",
-    "slug": "overflow_notify",
+    "slug": "overflow-notify",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -11,6 +11,7 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "jsEngine": "v8",
     "assetBundlePatterns": [
       "**/*"
     ],
@@ -18,13 +19,21 @@
       "supportsTablet": true
     },
     "android": {
+      "jsEngine": "v8",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#ffffff",
+        "googleServicesFile": "./google-services.json"
       }
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "ee2f722d-3541-453e-a365-ce226c3b7066"
+      }
+    },
+    "owner": "yogeeshm"
   }
 }
